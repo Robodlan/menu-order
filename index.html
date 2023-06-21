@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
     <title>Menu Order</title>
 </head>
 <body>
-    
-     <dialog data-modal class="modal hidden" id="modal">
+    <dialog data-modal class="modal hidden" id="modal">
                 <form class="form">
                     <h2 class="modal-title">Your card details</h2>
                     <input type="text" name="name" placeholder="Enter your name" required>
@@ -24,16 +26,17 @@
       </dialog> 
 
     <main class="main-container" id="main-container">
-        
         <section id="menu" class="menu"></section>
         <section id="order" class="order"></section> 
 
-        <section id="total-price" class="total-price hidden"> <!--Total price section -->
+       <section id="total-price" class="total-price hidden"> <!--Total price section -->
             <hr/>
             <h3 class="total" id="total"></h3>
         <button class="purchase-btn" id="purchase-btn" data-open-modal>Complete order</button>
         </section>
     </main>
+    
     <script src="script.js" type="module"></script>
+    
 </body>
 </html>

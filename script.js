@@ -66,18 +66,18 @@ function menu() {
                <p class="ing">${menu.ingredients.join(', ')}</p>
                <p class="price">$${menu.price}</p>
               </div>
-             <div class="div-btn">
-               <input type="button" class="btn" data-add="${menu.id}" /><img class="circle" src="plus-solid-2.svg"/>
-             </div>
-            </div>
-        <hr/>
-    `
-  })
-    return newMenu
-}
+               <i class="fa-regular fa-plus" data-add="${menu.id}"></i>
+              </div>
+              <hr/>
+              `
+            })
+            return newMenu
+          }
+          
+          function render() {
+            document.getElementById('menu').innerHTML = menu()
+          }
+          render()
+          // <div class="div-btn"></div> / este div estaba agrupando al plus icon  testing.......
 
-function render() {
-   document.getElementById('menu').innerHTML = menu()
-  }
-render()
-    
+

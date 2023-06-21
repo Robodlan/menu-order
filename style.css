@@ -62,6 +62,7 @@ body {
 }
 
 
+
 /* Order Typo */
 .order-title {
    font-size: var(--larger);
@@ -130,18 +131,34 @@ input,
     border: none;
 }
 
+/* Menuarray */
 .menu-items {
-   width: 31rem; 
+  width: 31rem; 
   height: 9rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
+
 .names {
     margin-right: auto;
     line-height: 2px;
 }
- 
+
+  .fa-regular {
+      border-radius: 50px;
+      border: 1px solid #dedede;
+      padding: 15px;
+      font-size: 17px;
+      color: #3c3c3c;
+  }
+
+  .fa-regular:hover {
+    background-color: var(--green);
+    color: #ECFDF5;
+    cursor: pointer;
+}
+  
 
 /* Order */
 .order-section {
@@ -152,31 +169,6 @@ input,
      align-items: center;
 }
 
-.circle {
-    width: 50px;
-    height: 50px;
-    color: #16DB99;
-    padding: 11px;
-    /* padding: 20px; */
-    /* color: red; */
-    /* font-size: 3px; */
-    border-radius: 50%;
-    border: 1.5px solid #DEDEDE;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* flex-direction: column; */
-}
-
-/* .div-btn {
-  display: flex;
-  
-} */
-
-.btn {
-    width: 1px;
-    height: 1px;
-}
 /* Total price */
 .purchase-btn {
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;   
