@@ -5,6 +5,7 @@
     --large: 24px;
     --larger: 28px;
     --very-large: 32px; 
+    --largest: 39px;
     --green:  #16DB99;
     --dark-green:#065F46;
     --light-green: #ECFDF5;
@@ -27,9 +28,24 @@ body {
     padding: 0;
     font-family: 'Smythe', cursive;
     display: flex;
-    align-items: center;
     justify-content: center;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.header {
+    position: relative;
+    /* border: 1px solid pink; */
+    /* font-size: var(--largest); */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.title-subtitle {
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    color: #fff;
 }
 
 /* Typography */ 
