@@ -3,6 +3,7 @@ const order = document.getElementById("order")
 const newObj = document.getElementById('new-obj')
 const modal = document.getElementById('modal')
 const payBtn = document.getElementById('pay-btn')
+const lastTitle = document.getElementById('last-title')
 const purchaseBtn = document.getElementById('purchase-btn')
 let orderArray = []
 
@@ -14,6 +15,8 @@ purchaseBtn.addEventListener('click', (e)=> {
 
 payBtn.addEventListener('click', () => {
   modal.classList.add('hidden')
+  order.classList.add('hidden')
+  lastTitle.classList.remove('hidden')
 })
 
 document.addEventListener('click', (e) => {

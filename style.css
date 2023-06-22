@@ -176,3 +176,15 @@ input,
 .hidden {
     display: none;
 }
+
+/* last-title */ 
+.last-title {
+    text-align: center;
+    width: 504px;
+    height: 120px;
+    margin: 20px;
+    font-size: var(--large);
+    color: var(--dark-green);
+    border-radius: 3px;
+    background: #ECFDF5;
+}
