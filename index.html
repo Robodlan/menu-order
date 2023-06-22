@@ -14,29 +14,27 @@
     <title>Menu Order</title>
 </head>
 <body>
-    <dialog data-modal class="modal hidden" id="modal">
-                <form class="form">
+        <dialog  class="modal hidden" id="modal">
+                <form method="dialog" class="form">
                     <h2 class="modal-title">Your card details</h2>
                     <input type="text" name="name" placeholder="Enter your name" required>
                     <input type="number" name="number" placeholder="Enter card number" required>
                     <input type="number" name="cvv" placeholder="Enter CVV" required>
-                    <button class="cancel-btn" formmethod="dialog">Cancel</button>
-                    <button data-close-modal class="pay-btn">Pay</button>
+                    <button id="pay-btn" class="pay-btn">Pay</button>
                 </form>
-      </dialog> 
+        </dialog> 
 
     <main class="main-container" id="main-container">
         <section id="menu" class="menu"></section>
         <section id="order" class="order"></section> 
 
-       <section id="total-price" class="total-price hidden"> <!--Total price section -->
+       <section id="new-obj" class="new-obj hidden"> <!--Total price section -->
             <hr/>
             <h3 class="total" id="total"></h3>
-        <button class="purchase-btn" id="purchase-btn" data-open-modal>Complete order</button>
+        <button class="purchase-btn" id="purchase-btn">Complete order</button>
         </section>
     </main>
-    
-    <script src="script.js" type="module"></script>
+ <script src="script.js" type="module"></script>
     
 </body>
 </html>

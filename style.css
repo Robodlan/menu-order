@@ -137,7 +137,7 @@ input,
   height: 9rem;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .names {
