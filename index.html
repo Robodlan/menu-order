@@ -14,41 +14,41 @@
     <title>Menu Order</title>
 </head>
 <body>
+    <header class="header">
+     <img src="restaurant.png" alt="a humburger pic"/>
+        <div class="title-subtitle">
+            <h2 class="title-header" >Jimmy’s Diner</h2>
+            <h3 class="subtitle-header" >The best burgers and pizzas in town.</h3>
+        </div>
+    </header>
     
-    
-        <dialog  class="modal hidden" id="modal">
-                <form method="dialog" class="form">
-                    <h2 class="modal-title">Your card details</h2>
-                    <input type="text" name="name" placeholder="Enter your name" required>
-                    <input type="number" name="number" placeholder="Enter card number" required>
-                    <input type="number" name="cvv" placeholder="Enter CVV" required>
-                    <button id="pay-btn" class="pay-btn">Pay</button>
-                </form>
-        </dialog> 
-
     <main class="main-container" id="main-container">
-        <header class="header">
-         <img src="restaurant.png" alt="a humburger pic"/>
-            <div class="title-subtitle">
-                <h2 class="title-header" >Jimmy’s Diner</h2>
-                <h3 class="subtitle-header" >The best burgers and pizzas in town.</h3>
-            </div>
-         
-        </header>
+
         <section id="menu" class="menu"></section>
         <section id="order" class="order"></section> 
 
         <section id="new-obj" class="new-obj hidden"> <!--Total price section -->
             <hr/>
-        <h3 class="total" id="total"></h3>
-        <button class="purchase-btn" id="purchase-btn">Complete order</button>
+            <h3 class="total" id="total"></h3>
+            
+            <button class="purchase-btn" id="purchase-btn">Complete order</button>
         </section>
 
         <div class="last-title hidden" id="last-title">
             <h2>Thanks, James! Your order is on its way!</h2>
         </div>
+        <dialog  class="modal hidden" id="modal">
+            <form method="dialog" class="form">
+                <h2 class="modal-title">Your card details</h2>
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="number" name="number" placeholder="Enter card number" required>
+                <input type="number" name="cvv" placeholder="Enter CVV" required>
+                <button id="pay-btn" class="pay-btn">Pay</button>
+            </form>
+        </dialog> 
     </main>
- <script src="script.js" type="module"></script>
-    
-</body>
+      
+      <!-- modal -->
+  <script src="script.js" type="module"></script>
+ </body>
 </html>

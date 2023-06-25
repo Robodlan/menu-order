@@ -57,8 +57,8 @@ function renderOrder(orderArray) {
       <div class="order-section">
         <h3 class="name order-name">${item.name}</h3>
         <p data-remove="${index}" class="remove">Remove</p>
-        <p class="price">$${item.price}.00</p>
-        </div>
+        <p class="price">$${item.price}</p>
+      </div>
         
       `
     })
@@ -78,16 +78,16 @@ function menu() {
             </div>
         <i class="fa-regular fa-plus" data-add="${menu.id}"></i>
     </div>
-     <hr/>
+  <hr/>
            `
             })
-            return newMenu
-          }
+  return newMenu
+}
           
-          function render() {
-            document.getElementById('menu').innerHTML = menu()
-          }
-          render()
+function render() {
+  document.getElementById('menu').innerHTML = menu()
+}
+render()
 
 
 
