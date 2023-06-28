@@ -1,9 +1,9 @@
 import {menuArray} from './data.js'
 const order = document.getElementById("order")
-const newObj = document.getElementById('new-obj')
+const newObj = document.getElementById('total-price-section')
 const modal = document.getElementById('modal')
 const payBtn = document.getElementById('pay-btn')
-const lastTitle = document.getElementById('last-title')
+const lastTitle = document.getElementById('last-div')
 const purchaseBtn = document.getElementById('purchase-btn')
 let orderArray = []
 
@@ -11,7 +11,7 @@ purchaseBtn.addEventListener('click', (e)=> {
    modal.classList.remove('hidden')
    newObj.classList.add('hidden')
    order.classList.add('hidden')
-})
+  })
 
 payBtn.addEventListener('click', () => {
   modal.classList.add('hidden')
@@ -36,7 +36,7 @@ function getTotal(items) {
    let newTotal = items.reduce((acc, item) => {
         return acc + item.price
     }, 0)
-    document.getElementById('total').innerHTML = `Your total: $${newTotal}.00`
+    document.getElementById('total').innerHTML = `$${newTotal}.00`
 }
 
 function handleClick(dataId) {
@@ -78,7 +78,7 @@ function menu() {
             </div>
         <i class="fa-regular fa-plus" data-add="${menu.id}"></i>
     </div>
-  <hr/>
+  <hr />
            `
             })
   return newMenu

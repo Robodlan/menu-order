@@ -14,27 +14,29 @@
     <title>Menu Order</title>
 </head>
 <body>
-    <header class="header">
-     <img src="restaurant.png" alt="a humburger pic"/>
-        <div class="title-subtitle">
-            <h2 class="title-header" >Jimmy’s Diner</h2>
-            <h3 class="subtitle-header" >The best burgers and pizzas in town.</h3>
+    <header>
+        <div class="header container" >
+            <img class="img-rest" src="restaurant.png" alt="a humburger pic"/>
+               <div class="title-subtitle">
+                   <h2 class="title-header" >Jimmy's Diner</h2>
+                   <h3 class="subtitle-header" >The best burgers and pizzas in town.</h3>
+               </div>
         </div>
     </header>
-    
-    <main class="main-container" id="main-container">
+    <main class="container main" id="main-container">
 
         <section id="menu" class="menu"></section>
         <section id="order" class="order"></section> 
 
-        <section id="new-obj" class="new-obj hidden"> <!--Total price section -->
+        <section id="total-price-section" class="total-price-section hidden"> <!--Total price section -->
             <hr/>
-            <h3 class="total" id="total"></h3>
-            
+            <div class="your-total-section" >
+                <h3>Your Total:</h3><spam class="total" id="total"></spam>
+            </div>
             <button class="purchase-btn" id="purchase-btn">Complete order</button>
         </section>
 
-        <div class="last-title hidden" id="last-title">
+        <div class="last-div hidden" id="last-div">
             <h2>Thanks, James! Your order is on its way!</h2>
         </div>
         <dialog  class="modal hidden" id="modal">
