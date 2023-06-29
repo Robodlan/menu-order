@@ -293,6 +293,7 @@ input,
     .modal {
        width: 90%;
        max-width: 440px;
+       background-color: #fff;
     }    
 }
 
