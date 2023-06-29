@@ -39,13 +39,13 @@
         <div class="last-div hidden" id="last-div">
             <h2>Thanks, James! Your order is on its way!</h2>
         </div>
-        <dialog  class="modal hidden" id="modal">
-            <form method="dialog" class="form">
+    <dialog  class="modal hidden" id="modal">
+            <form action="#" class="form">
                 <h2 class="modal-title">Your card details</h2>
-                <input type="text" name="name" placeholder="Enter your name" required>
-                <input type="number" name="number" placeholder="Enter card number" required>
-                <input type="number" name="cvv" placeholder="Enter CVV" required>
-                <button id="pay-btn" class="pay-btn">Pay</button>
+                 <input type="text" name="name" placeholder="Enter your name" required="true">
+                 <input type="number" minlength="16" maxlength="16" name="number" placeholder="Enter card number" required>
+                 <input type="number" minlength="3" maxlength="3" name="cvv" placeholder="Enter CVV" required="true">
+                <input type="submit" id="pay-btn" class="pay-btn" placeholder="Pay"></input>
             </form>
         </dialog> 
     </main>

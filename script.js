@@ -17,6 +17,9 @@ payBtn.addEventListener('click', () => {
   modal.classList.add('hidden')
   order.classList.add('hidden')
   lastTitle.classList.remove('hidden')
+  setTimeout(()=> {
+    lastTitle.classList.add('hidden') 
+  }, 3000)
 })
 
 document.addEventListener('click', (e) => {
