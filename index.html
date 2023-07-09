@@ -23,8 +23,8 @@
                </div>
         </div>
     </header>
-    <main class="container main" id="main-container">
 
+    <main class="container main" id="main-container">
         <section id="menu" class="menu"></section>
         <section id="order" class="order"></section> 
 
@@ -36,21 +36,26 @@
             <button class="purchase-btn" id="purchase-btn">Complete order</button>
         </section>
 
-        <div class="last-div hidden" id="last-div">
-            <h2>Thanks, James! Your order is on its way!</h2>
-        </div>
-    <dialog  class="modal hidden" id="modal">
-            <form action="#" class="form">
-                <h2 class="modal-title">Your card details</h2>
-                 <input type="text" name="name" placeholder="Enter your name" required="true">
-                 <input type="number" minlength="16" maxlength="16" name="number" placeholder="Enter card number" required>
-                 <input type="number" minlength="3" maxlength="3" name="cvv" placeholder="Enter CVV" required="true">
-                <input type="submit" id="pay-btn" class="pay-btn" placeholder="Pay"></input>
+        <div class="last-div hidden" id="last-div"></div>
+
+        <dialog class="dialog" id="dialog">
+            <form action="/" method="get" class="form" id="form" >
+                <h2 class="modal-title" style="text-align: center;" >Your card details</h2>
+                <h3 class="error" id="error"></h3>
+                <label for="name">
+                    <input type="text" id="input-text-name" name="name" placeholder="Enter your name" required>
+                </label>
+                <label for="number">
+                    <input type="number" min="16" id="input-card-details" name="number" placeholder="Enter card number" required>
+                </label>
+                <label for="cvv">
+                     <input type="number" id="input-card-cvv" name="cvv" placeholder="Enter CVV" required>
+                </label>
+                <button type="submit" aria-label="pay-order" formmethod="dialog" id="pay-btn" class="pay-btn" >Pay</button>
             </form>
         </dialog> 
     </main>
-      
-      <!-- modal -->
+     <!-- modal -->
   <script src="script.js" type="module"></script>
  </body>
 </html>

@@ -1,26 +1,63 @@
 import {menuArray} from './data.js'
 const order = document.getElementById("order")
 const newObj = document.getElementById('total-price-section')
-const modal = document.getElementById('modal')
+const dialog = document.getElementById('dialog')
 const payBtn = document.getElementById('pay-btn')
-const lastTitle = document.getElementById('last-div')
+const lastDiv = document.getElementById('last-div')
 const purchaseBtn = document.getElementById('purchase-btn')
+const inputTextName = document.getElementById('input-text-name')
+const inputCardDetails = document.getElementById('input-card-details')
+const inputCardCvv = document.getElementById('input-card-cvv')
+const error =  document.getElementById('error')
+const form = document.getElementById('form')
+
 let orderArray = []
 
+form.addEventListener('submit', (e)=> {
+  let message = ""
+  if(inputCardDetails.value !== 16 && inputCardCvv.value !== 3){
+    
+    // e.preventDefault()
+    console.log('noo')
+    } 
+  else {
+    inputTextName.value = ''
+    inputCardDetails.value = ''
+    inputCardCvv.value = ''
+  }
+  
+})
+
+inputTextName.addEventListener('input', (e)=> {
+  let text = /[^a-z\s]/gi
+   inputTextName.value = inputTextName.value.replace(text, "")
+})
+
+inputCardDetails.addEventListener('input', (e)=> {
+   let num = /[/d]/gi
+   inputCardDetails.value = inputCardDetails.value.replace(num, "")
+})
+
+inputCardCvv.addEventListener('input', (e)=> {
+  let num = /[/d]/gi
+  inputCardCvv.value = inputCardCvv.value.replace(num, "")
+})
+
 purchaseBtn.addEventListener('click', (e)=> {
-   modal.classList.remove('hidden')
-   newObj.classList.add('hidden')
-   order.classList.add('hidden')
+    dialog.showModal();
+    newObj.classList.add('hidden')
+    order.classList.add('hidden')
   })
 
-payBtn.addEventListener('click', () => {
-  modal.classList.add('hidden')
-  order.classList.add('hidden')
-  lastTitle.classList.remove('hidden')
-  setTimeout(()=> {
-    lastTitle.classList.add('hidden') 
-  }, 3000)
-})
+// payBtn.addEventListener('click', (e) => {
+//     dialog.close();
+//     order.classList.add('hidden')
+//     lastDiv.classList.remove('hidden')
+//     lastDiv.innerHTML = `<h2>Thanks, ${inputTextName.value}! Your order is on its way!</h2>`
+//     setTimeout(()=> {
+//       lastDiv.classList.add('hidden') 
+//     }, 5000)
+// })
 
 document.addEventListener('click', (e) => {
     if(e.target.dataset.add) {
