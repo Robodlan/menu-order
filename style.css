@@ -29,6 +29,11 @@ body {
 
 /* Typography */ 
 .title-subtitle {
+    /* display: flex; */
+    /* flex-direction: column; */
+    font-size: var(--small);
+    /* line-height: 20px; */
+    /* background-color: #16DB99; */
     position: absolute;
     left:  0.3rem;
     top: 0.30rem;
